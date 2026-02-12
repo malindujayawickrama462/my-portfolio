@@ -73,7 +73,7 @@ export default function Contact() {
                                 placeholder="Tell me about your project..."
                             ></textarea>
                         </div>
-                        <button className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold py-4 rounded-xl hover:opacity-90 transition-opacity shadow-lg shadow-indigo-500/20">
+                        <button className="w-full bg-linear-to-r from-indigo-500 to-purple-500 text-white font-bold py-4 rounded-xl hover:opacity-90 transition-opacity shadow-lg shadow-indigo-500/20">
                             Send Message
                         </button>
                     </form>
