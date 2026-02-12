@@ -23,30 +23,45 @@ export default function About() {
                     <div className="relative bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-all duration-500 hover:border-indigo-500/30 hover:shadow-indigo-500/20 hover:shadow-2xl">
                         <h3 className="text-2xl font-bold mb-6">My Journey</h3>
                         <p className="text-gray-300 leading-relaxed mb-6">
-                            I started coding with a simple curiosity that turned into a full-blown passion.
-                            From building small scripts to architecting complex web applications,
-                            my journey has been defined by constant learning and innovation.
+                            I am an Information Technology undergraduate with a strong interest in learning and
+                            applying software development concepts. I have hands-on experience with Java, Spring Boot,
+                            and modern web technologies. I am eager to contribute to a development team as a Software Engineer Intern.
                         </p>
                         <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
-                            {stats.map((stat, index) => (
-                                <div key={index} className="text-center">
-                                    <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-indigo-200">
-                                        {stat.value}
-                                    </div>
-                                    <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
-                                        {stat.label}
-                                    </div>
+                            {/* Stats replaced with Core Soft Skills for an intern context */}
+                            <div className="text-center">
+                                <div className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-indigo-200">
+                                    Fast
                                 </div>
-                            ))}
+                                <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
+                                    Learner
+                                </div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-indigo-200">
+                                    Team
+                                </div>
+                                <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
+                                    Player
+                                </div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-indigo-200">
+                                    Problem
+                                </div>
+                                <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
+                                    Solver
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 {/* Right Column - Content */}
                 <div>
-                    <h2 className="text-sm font-bold tracking-[0.2em] text-gray-400 uppercase mb-2">About Me</h2>
+                    <h2 className="text-sm font-bold tracking-[0.2em] text-indigo-400 uppercase mb-2">About Me</h2>
                     <h1 className="text-4xl md:text-5xl font-bold mb-8">
-                        Solving problems with <span className="text-white">code</span> and <span className="text-white">design</span>.
+                        Solving problems with <span className="text-indigo-400">code</span> and <span className="text-indigo-400">design</span>.
                     </h1>
 
                     <p className="text-gray-300 leading-relaxed mb-8 text-lg">

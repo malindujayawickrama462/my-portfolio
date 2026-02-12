@@ -4,39 +4,35 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-featured online store with cart functionality, user authentication, and payment integration.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: 'bg-gradient-to-br from-indigo-900 to-slate-800',
+      title: 'GreenCoco (Supply Chain)',
+      description: 'Inventory and supply chain management system backend. Implemented JWT auth, role-based access, and efficient CRUD APIs using Express.js and MongoDB.',
+      tech: ['Node.js', 'Express.js', 'MongoDB', 'JWT'],
+      image: 'bg-gradient-to-br from-green-900 to-emerald-800',
+      link: 'https://github.com/malindujayawickrama462/GreenCoco'
     },
     {
       id: 2,
-      title: 'Social Media Dashboard',
-      description: 'Real-time analytics dashboard for tracking social media engagement and metrics across multiple platforms.',
-      tech: ['Vue.js', 'D3.js', 'Firebase'],
-      image: 'bg-gradient-to-br from-teal-900 to-emerald-900',
+      title: 'Maddrass Company',
+      description: 'Microservices-based e-commerce backend built with Spring Boot and Spring Cloud. Demonstrates real-world best practices for scalable architecture.',
+      tech: ['Spring Boot', 'Microservices', 'Spring Cloud', 'Java'],
+      image: 'bg-gradient-to-br from-indigo-900 to-blue-800',
+      link: 'https://github.com/malindujayawickrama462/Maddrass_Company'
     },
     {
       id: 3,
-      title: 'AI Task Manager',
-      description: 'Smart task management application that uses AI to prioritize and categorize your daily workflow.',
-      tech: ['React Native', 'Python', 'OpenAI API'],
-      image: 'bg-gradient-to-br from-violet-900 to-fuchsia-900',
+      title: 'Weather App',
+      description: 'Minimalist Spring Boot application detecting location via IP geolocation to display real-time weather without user input.',
+      tech: ['Spring Boot', 'Java', 'External APIs', 'Thymeleaf'],
+      image: 'bg-gradient-to-br from-blue-900 to-cyan-800',
+      link: 'https://github.com/malindujayawickrama462/weather-app'
     },
-    {
-      id: 4,
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website with glassmorphism design and smooth animations.',
-      tech: ['React', 'Tailwind', 'Vite'],
-      image: 'bg-gradient-to-br from-slate-800 to-black',
-    }
   ];
 
   return (
     <section id="projects" className="min-h-screen py-20 text-white z-20">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-          Featured <span className="text-white">Projects</span>
+          Featured <span className="text-indigo-400">Projects</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -61,9 +57,11 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <button className="w-full py-2 bg-white text-black rounded-lg font-semibold text-sm opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                  View Details
-                </button>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="block w-full">
+                  <button className="w-full py-2 bg-white text-black rounded-lg font-semibold text-sm opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                    View Code
+                  </button>
+                </a>
               </div>
             </div>
           ))}

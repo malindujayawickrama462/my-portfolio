@@ -4,10 +4,10 @@ export default function Education() {
     const education = [
         {
             id: 1,
-            degree: 'B.Sc. Computer Science',
-            institution: 'University of Technology',
-            period: '2019 - 2023',
-            description: 'Graduated with First Class Honors. Specialized in Software Engineering and Artificial Intelligence.',
+            degree: 'BSc (Hons) in Information Technology',
+            institution: 'Sri Lanka Institute of Information Technology (SLIIT)',
+            period: '2023 - Present',
+            description: 'Specializing in Information Technology. Focusing on Software Engineering, Data Structures, and Database Management Systems.',
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -18,25 +18,25 @@ export default function Education() {
         },
         {
             id: 2,
-            degree: 'Full Stack Development',
-            institution: 'Code Academy Online',
-            period: '2018 - 2019',
-            description: 'Intensive bootcamp covering modern web stack: React, Node.js, Express, and MongoDB.',
+            degree: 'G.C.E. Advanced Level',
+            institution: 'Bandaranayake College, Gampaha',
+            period: '2021',
+            description: 'Passed with 1C 2S in Mathematics stream. Developed strong analytical and problem-solving foundations.',
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
             )
         },
         {
             id: 3,
-            degree: 'High School Diploma',
-            institution: 'Central City College',
-            period: '2016 - 2018',
-            description: 'Majored in Mathematics and Physics. President of the Computer Club.',
+            degree: 'G.C.E. Ordinary Level',
+            institution: 'Bandaranayake College, Gampaha',
+            period: '2017',
+            description: 'Passed 9 subjects including Mathematics (A) and English (A).',
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
             )
         }
@@ -56,16 +56,16 @@ export default function Education() {
                     {/* Timeline Items */}
                     <div className="space-y-12">
                         {education.map((item, index) => (
-                            <div key={item.id} className={`relative flex items-center justify-between md:justify-normal md:${index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
+                            <div key={item.id} className={`relative flex items-center justify-between md:justify-normal md:gap-8 md:${index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
 
                                 {/* Connecting Dot */}
                                 <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-black z-10 shadow-[0_0_10px_rgba(99,102,241,0.5)]"></div>
 
                                 {/* Content Spacer for Alignment */}
-                                <div className="hidden md:block w-5/12"></div>
+                                <div className="hidden md:block w-1/2"></div>
 
                                 {/* Content Card */}
-                                <div className={`w-full md:w-5/12 ml-8 md:ml-0 pl-4 md:pl-0 ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
+                                <div className={`w-full md:w-[45%] ml-8 md:ml-0 pl-4 md:pl-0 ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
                                     <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300 hover:border-indigo-500/30 group">
                                         <div className={`flex items-center gap-4 mb-3 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                                             <div className="p-2 bg-indigo-500/20 rounded-lg">
