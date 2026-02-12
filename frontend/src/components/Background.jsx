@@ -5,7 +5,7 @@ export default function Background({ children }) {
       style={{ backgroundImage: `url('/portfolio-bg.jpg')` }}
     >
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-      <div className="relative z-10 max-w-6xl w-full flex flex-col md:flex-row items-center gap-12">
+      <div className="relative z-10 max-w-6xl w-full flex flex-col items-center gap-12">
         {children}
       </div>
     </div>

@@ -11,8 +11,8 @@ export default function Hero() {
         </div>
 
         <h1 className="text-7xl md:text-9xl font-black tracking-tighter leading-[0.8]">
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">JOHN</span>
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-white">DOE.</span>
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">MALINDU</span>
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-white">Malshan.</span>
         </h1>
 
         <p className="text-xl text-gray-400 max-w-lg leading-relaxed border-l-4 border-blue-500 pl-6 my-6">
@@ -22,7 +22,7 @@ export default function Hero() {
 
         <div className="flex gap-6 pt-4">
           <button className="px-8 py-3 bg-white text-black font-bold uppercase tracking-widest hover:bg-gray-200 transition-all transform hover:scale-105">
-            View Work
+            View Projects
           </button>
           <button className="px-8 py-3 border border-white/20 backdrop-blur-sm hover:bg-white/10 text-white font-bold uppercase tracking-widest transition-all">
             Contact Me
