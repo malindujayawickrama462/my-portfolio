@@ -19,7 +19,6 @@ export default function About() {
 
                 {/* Left Column - Image/Visuals */}
                 <div className="relative">
-                    <div className="absolute -inset-4 bg-gradient-to-tr from-cyan-500 to-purple-500 rounded-2xl blur-2xl opacity-20 animate-pulse"></div>
                     <div className="relative bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-all duration-500">
                         <h3 className="text-2xl font-bold mb-6">My Journey</h3>
                         <p className="text-gray-300 leading-relaxed mb-6">
@@ -30,7 +29,7 @@ export default function About() {
                         <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
                             {stats.map((stat, index) => (
                                 <div key={index} className="text-center">
-                                    <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+                                    <div className="text-2xl font-bold text-white">
                                         {stat.value}
                                     </div>
                                     <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
@@ -44,9 +43,9 @@ export default function About() {
 
                 {/* Right Column - Content */}
                 <div>
-                    <h2 className="text-sm font-bold tracking-[0.2em] text-purple-400 uppercase mb-2">About Me</h2>
+                    <h2 className="text-sm font-bold tracking-[0.2em] text-gray-400 uppercase mb-2">About Me</h2>
                     <h1 className="text-4xl md:text-5xl font-bold mb-8">
-                        Solving problems with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">code</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300">design</span>.
+                        Solving problems with <span className="text-white">code</span> and <span className="text-white">design</span>.
                     </h1>
 
                     <p className="text-gray-300 leading-relaxed mb-8 text-lg">
@@ -62,7 +61,7 @@ export default function About() {
                                     <span className="text-gray-400">{skill.level}</span>
                                 </div>
                                 <div className="h-2 w-full bg-white/10 rounded-full overflow-hidden">
-                                    <div className={`h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full ${skill.width}`}></div>
+                                    <div className={`h-full bg-gradient-to-r from-gray-500 to-white rounded-full ${skill.width}`}></div>
                                 </div>
                             </div>
                         ))}
