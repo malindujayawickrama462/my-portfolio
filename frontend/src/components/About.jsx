@@ -19,7 +19,8 @@ export default function About() {
 
                 {/* Left Column - Image/Visuals */}
                 <div className="relative">
-                    <div className="relative bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-all duration-500">
+                    <div className="absolute -inset-4 bg-indigo-500/10 rounded-2xl blur-2xl"></div>
+                    <div className="relative bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-all duration-500 hover:border-indigo-500/30 hover:shadow-indigo-500/20 hover:shadow-2xl">
                         <h3 className="text-2xl font-bold mb-6">My Journey</h3>
                         <p className="text-gray-300 leading-relaxed mb-6">
                             I started coding with a simple curiosity that turned into a full-blown passion.
@@ -29,7 +30,7 @@ export default function About() {
                         <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
                             {stats.map((stat, index) => (
                                 <div key={index} className="text-center">
-                                    <div className="text-2xl font-bold text-white">
+                                    <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-indigo-200">
                                         {stat.value}
                                     </div>
                                     <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">

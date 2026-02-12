@@ -7,28 +7,28 @@ export default function Projects() {
       title: 'E-Commerce Platform',
       description: 'A full-featured online store with cart functionality, user authentication, and payment integration.',
       tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: 'bg-gradient-to-br from-gray-700 to-gray-600',
+      image: 'bg-gradient-to-br from-indigo-900 to-slate-800',
     },
     {
       id: 2,
       title: 'Social Media Dashboard',
       description: 'Real-time analytics dashboard for tracking social media engagement and metrics across multiple platforms.',
       tech: ['Vue.js', 'D3.js', 'Firebase'],
-      image: 'bg-gradient-to-br from-gray-800 to-gray-500',
+      image: 'bg-gradient-to-br from-teal-900 to-emerald-900',
     },
     {
       id: 3,
       title: 'AI Task Manager',
       description: 'Smart task management application that uses AI to prioritize and categorize your daily workflow.',
       tech: ['React Native', 'Python', 'OpenAI API'],
-      image: 'bg-gradient-to-br from-gray-600 to-gray-400',
+      image: 'bg-gradient-to-br from-violet-900 to-fuchsia-900',
     },
     {
       id: 4,
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website with glassmorphism design and smooth animations.',
       tech: ['React', 'Tailwind', 'Vite'],
-      image: 'bg-gradient-to-br from-gray-900 to-gray-700',
+      image: 'bg-gradient-to-br from-slate-800 to-black',
     }
   ];
 

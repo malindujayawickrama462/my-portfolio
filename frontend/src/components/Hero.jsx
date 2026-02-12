@@ -4,14 +4,15 @@ export default function Hero() {
       {/* Text Content */}
       <div className="flex flex-col items-start space-y-6 md:w-1/2">
         <div className="relative">
-          <h2 className="relative text-sm font-bold tracking-[0.2em] text-gray-200 uppercase mb-2">
+          <div className="absolute -inset-4 bg-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
+          <h2 className="relative text-sm font-bold tracking-[0.2em] text-indigo-300 uppercase mb-2">
             Welcome to my world
           </h2>
         </div>
 
-        <h1 className="text-7xl md:text-9xl font-black tracking-tighter leading-[0.8]">
-          <span className="block text-white">MALINDU</span>
-          <span className="block text-gray-400">Malshan.</span>
+        <h1 className="text-7xl md:text-9xl font-black tracking-tighter leading-[0.8] drop-shadow-2xl">
+          <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400">MALINDU</span>
+          <span className="block text-transparent bg-clip-text bg-gradient-to-b from-gray-400 to-gray-600">Malshan.</span>
         </h1>
 
         <p className="text-xl text-gray-400 max-w-lg leading-relaxed border-l-4 border-blue-500 pl-6 my-6">
