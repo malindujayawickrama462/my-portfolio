@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/10 backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center text-white">
-        <div className="text-xl font-bold tracking-widest uppercase bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        <div className="text-xl font-bold tracking-widest uppercase bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
           PORTFOLIO
         </div>
 
@@ -33,7 +33,7 @@ function Navbar() {
               className="relative group text-gray-300 hover:text-white transition-colors"
             >
               {item}
-              <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
         </div>

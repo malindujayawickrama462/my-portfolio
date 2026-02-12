@@ -35,8 +35,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-7xl md:text-9xl font-black tracking-tighter leading-[0.8] drop-shadow-2xl"
         >
-          <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400">MALINDU</span>
-          <span className="block text-transparent bg-clip-text bg-gradient-to-b from-gray-400 to-gray-600">MALSHAN.</span>
+          <span className="block text-transparent bg-clip-text bg-linear-to-b from-white to-gray-400">MALINDU</span>
+          <span className="block text-transparent bg-clip-text bg-linear-to-b from-gray-400 to-gray-600">MALSHAN.</span>
         </motion.h1>
 
         <motion.p
@@ -77,11 +77,11 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative w-80 h-96 md:w-96 md:h-[30rem]"
+          className="relative w-80 h-96 md:w-96 md:h-120"
         >
           {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-full h-full border-2 border-white/20 transform translate-x-6 translate-y-6 rounded-2xl"></div>
-          <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-2xl z-10 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-linear-to-tr from-blue-500/10 to-purple-500/10 rounded-2xl z-10 pointer-events-none"></div>
 
           <img
             src="/profile-img.png"

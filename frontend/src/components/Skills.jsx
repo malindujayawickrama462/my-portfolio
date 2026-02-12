@@ -58,7 +58,7 @@ export default function Skills() {
                         >
                             {/* Individual Card Glow Effect on Hover */}
                             <div
-                                className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                className="absolute inset-0 bg-linear-to-br from-indigo-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                             ></div>
 
                             <div className="relative z-10 p-3 bg-black/20 rounded-xl border border-white/5 group-hover:border-white/10 transition-colors">
