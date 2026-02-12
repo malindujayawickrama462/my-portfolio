@@ -26,6 +26,14 @@ export default function Projects() {
       image: 'bg-gradient-to-br from-blue-900 to-cyan-800',
       link: 'https://github.com/malindujayawickrama462/weather-app'
     },
+    {
+      id: 4,
+      title: 'Employee Management System',
+      description: 'Comprehensive HR platform with employee tracking, payroll, and RBAC security. Built with scalable RESTful APIs, JWT authentication, and optimized MongoDB schemas.',
+      tech: ['Node.js', 'Express.js', 'MongoDB', 'JWT'],
+      image: 'bg-gradient-to-br from-violet-900 to-purple-900',
+      link: 'https://github.com/malindujayawickrama462/Employee_management_system'
+    },
   ];
 
   return (
