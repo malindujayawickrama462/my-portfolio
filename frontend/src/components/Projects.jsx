@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function Projects() {
   const projects = [
@@ -45,7 +46,12 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <div key={project.id} className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl">
+            <motion.div
+              key={project.id}
+              whileHover={{ scale: 1.05, y: -10 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 hover:shadow-2xl"
+            >
               {/* Image Placeholder */}
               <div className={`h-48 w-full ${project.image} relative overflow-hidden`}>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-300"></div>
@@ -71,7 +77,7 @@ export default function Projects() {
                   </button>
                 </a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

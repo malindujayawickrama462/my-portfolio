@@ -1,27 +1,59 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
+  const [text, setText] = useState('');
+  const fullText = " SOFTWARE ENGINEER-INTERN";
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      setText(fullText.substring(0, index));
+      index++;
+      if (index > fullText.length) {
+        clearInterval(interval);
+      }
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="flex-1 flex flex-col md:flex-row items-center justify-between w-full text-white z-20">
+    <div className="flex-1 flex flex-col md:flex-row items-center justify-between w-full text-white z-20 px-8">
       {/* Text Content */}
       <div className="flex flex-col items-start space-y-6 md:w-1/2">
         <div className="relative">
           <div className="absolute -inset-4 bg-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
-          <h2 className="relative text-sm font-bold tracking-[0.2em] text-indigo-300 uppercase mb-2">
-            SOFTWARE ENGINEER-INTERN
+          <h2 className="relative text-sm font-bold tracking-[0.2em] text-indigo-300 uppercase mb-2 h-6">
+            {text}
+            <span className="animate-pulse">|</span>
           </h2>
         </div>
 
-        <h1 className="text-7xl md:text-9xl font-black tracking-tighter leading-[0.8] drop-shadow-2xl">
+        <motion.h1
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-7xl md:text-9xl font-black tracking-tighter leading-[0.8] drop-shadow-2xl"
+        >
           <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400">MALINDU</span>
           <span className="block text-transparent bg-clip-text bg-gradient-to-b from-gray-400 to-gray-600">MALSHAN.</span>
-        </h1>
+        </motion.h1>
 
-        <p className="text-lg text-gray-400 max-w-lg leading-relaxed border-l-4 border-indigo-500 pl-6 my-6">
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="text-lg text-gray-400 max-w-lg leading-relaxed border-l-4 border-indigo-500 pl-6 my-6"
+        >
           I am an Information Technology undergraduate with strong interest in learning and applying software development concepts in real-world projects. I have hands-on experience with Java, JavaScript, Spring Boot, Node.js, and database systems.
-        </p>
+        </motion.p>
 
-        <div className="flex flex-wrap gap-4 pt-4">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1 }}
+          className="flex flex-wrap gap-4 pt-4"
+        >
           <a href="#projects" className="px-8 py-3 bg-white text-black font-bold uppercase tracking-widest rounded-full hover:bg-gray-200 transition-all transform hover:scale-105">
             View Projects
           </a>
@@ -36,12 +68,17 @@ export default function Hero() {
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" /></svg>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Image/Visual Content */}
       <div className="md:w-1/2 flex justify-center relative mt-12 md:mt-0">
-        <div className="relative w-80 h-96 md:w-96 md:h-[30rem]">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative w-80 h-96 md:w-96 md:h-[30rem]"
+        >
           {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-full h-full border-2 border-white/20 transform translate-x-6 translate-y-6 rounded-2xl"></div>
           <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-2xl z-10 pointer-events-none"></div>
@@ -53,11 +90,16 @@ export default function Hero() {
           />
 
           {/* Floating badge */}
-          <div className="absolute -bottom-6 -left-6 bg-black/80 backdrop-blur-md p-4 rounded-xl border border-white/10 shadow-xl z-20">
+          <motion.div
+            initial={{ y: 0 }}
+            animate={{ y: [-10, 10, -10] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute -bottom-6 -left-6 bg-black/80 backdrop-blur-md p-4 rounded-xl border border-white/10 shadow-xl z-20"
+          >
             <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">Status</p>
             <p className="text-xl font-bold text-white">Undergraduate</p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
