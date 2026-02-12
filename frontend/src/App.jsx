@@ -1,9 +1,14 @@
-import React from 'react'
+import Background from './components/Background';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className='bg-amber-500'>App</div>
-  )
+    <Background>
+      <Navbar />
+      <Hero />
+    </Background>
+  );
 }
 
-export default App
+export default App;
