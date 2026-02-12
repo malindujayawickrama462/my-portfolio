@@ -30,7 +30,7 @@ export default function About() {
                         <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
                             {/* Stats replaced with Core Soft Skills for an intern context */}
                             <div className="text-center">
-                                <div className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-indigo-200">
+                                <div className="text-xl font-bold text-transparent bg-clip-text bg-linear-to-b from-white to-indigo-200">
                                     Fast
                                 </div>
                                 <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
@@ -38,7 +38,7 @@ export default function About() {
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-indigo-200">
+                                <div className="text-xl font-bold text-transparent bg-clip-text bg-linear-to-b from-white to-indigo-200">
                                     Team
                                 </div>
                                 <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
@@ -46,7 +46,7 @@ export default function About() {
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-indigo-200">
+                                <div className="text-xl font-bold text-transparent bg-clip-text bg-linear-to-b from-white to-indigo-200">
                                     Problem
                                 </div>
                                 <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">
@@ -77,13 +77,14 @@ export default function About() {
                                     <span className="text-gray-400">{skill.level}</span>
                                 </div>
                                 <div className="h-2 w-full bg-white/10 rounded-full overflow-hidden">
-                                    <div className={`h-full bg-gradient-to-r from-gray-500 to-white rounded-full ${skill.width}`}></div>
+                                    <div className={`h-full bg-linear-to-r from-gray-500 to-white rounded-full ${skill.width}`}></div>
                                 </div>
                             </div>
                         ))}
                     </div>
 
-                    <button className="mt-10 px-8 py-3 border border-white/20 hover:bg-white/10 text-white font-bold uppercase tracking-widest transition-all rounded transition-colors hover:border-white/40">
+                    <button className="mt-10 px-8 py-3 border border-white/20 hover:bg-white/10 text-white font-bold uppercase tracking-widest transition-colors duration-300 rounded hover:border-white/40"
+>
                         Download CV
                     </button>
                 </div>
