@@ -3,9 +3,7 @@ import { motion } from 'framer-motion';
 import {
   SiMongodb, SiExpress, SiReact, SiNodedotjs,
   SiTailwindcss, SiSpringboot, SiSpring,
-  SiHibernate, SiMysql, SiPostgresql,
-  SiDocker, SiKubernetes, SiAwslambda,
-  SiFramer, SiVite, SiHtml5, SiCss3, SiJavascript
+  SiFramer, SiVite, SiHtml5
 } from "react-icons/si";
 import { FaJava, FaCloud } from "react-icons/fa";
 
